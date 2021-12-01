@@ -76,7 +76,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                   ),
 
                   Text(
-                    "${widget.price}",
+                    "${widget.price} TK",
                     style: TextStyle(
                         color: MyTheme.accent_color,
                         fontSize: 18.0,
@@ -102,7 +102,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                       fontWeight: FontWeight.w600),
                 ),
                 onPressed: () {
-                  ToastComponent.showDialog("${widget.price}", context,
+                  ToastComponent.showDialog("${widget.price} TK", context,
                       gravity: Toast.CENTER, duration: Toast.LENGTH_LONG);
 
                 },

@@ -36,7 +36,7 @@ class _ProductCardState extends State<ProductCard> {
         ),
         elevation: 0.0,
         child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Container(
@@ -50,7 +50,6 @@ class _ProductCardState extends State<ProductCard> {
                           top: Radius.circular(16), bottom: Radius.zero),
                       child: Image.asset('assets/images/${widget.image}'),)),
               Container(
-                height: 90,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -71,7 +70,7 @@ class _ProductCardState extends State<ProductCard> {
                     Padding(
                       padding: EdgeInsets.fromLTRB(16, 4, 16, 0),
                       child: Text(
-                        widget.price,
+                        "TK "+widget.price,
                         textAlign: TextAlign.left,
                         overflow: TextOverflow.ellipsis,
                         maxLines: 1,

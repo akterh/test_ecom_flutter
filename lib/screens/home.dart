@@ -116,7 +116,6 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
 
           }else{
             return Container(
-              child: Text("no data found"),
             );
           }
 
